@@ -1,10 +1,17 @@
 [
     {
-        "title": "AWS Certified Cloud Practicioner",
+        "title": "AWS Certified Cloud Practicioner (In progress)",
         "institution": "Amazon Web Services (AWS)",
         "year": "2026",
         "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1777050928/amazon_web_services_logo_drvj1o.jpg",
         "credential_url": ""
+    },
+    {
+        "title": "English - C1 Proficient",
+        "institution": "EF SET",
+        "year": "2026",
+        "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1777661109/efset_logo_dy7g5o.webp",
+        "credential_url": "https://cert.efset.org/en/eW3vQP"
     },
     {
         "title": "AI Fluency: Framework & Foundations",
@@ -47,12 +54,5 @@
         "year": "2021",
         "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1776411259/coderhouse_q9uhaq.webp",
         "credential_url": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1758376359/Data_Analytics_Certificate_-_Coderhouse_a1a98i.png"
-    },
-    {
-        "title": "English - C2 Proficient",
-        "institution": "EF",
-        "year": "2021",
-        "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1776411259/ef_xpeocp.webp",
-        "credential_url": "https://cert.efset.org/ELAqt6"
     }
 ]
