@@ -1,9 +1,16 @@
 [
     {
-        "title": "AWS Certified Cloud Practicioner (In progress)",
-        "institution": "Amazon Web Services (AWS)",
+        "title": "Microsoft Certified: Power BI Data Analyst Associate",
+        "institution": "Microsoft",
         "year": "2026",
-        "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1777050928/amazon_web_services_logo_drvj1o.jpg",
+        "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1778091156/microsoft-logo_wdir30.webp",
+        "credential_url": ""
+    },
+    {
+        "title": "Microsoft Certified: Azure Data Fundamentals",
+        "institution": "Microsoft",
+        "year": "2026",
+        "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1778091156/microsoft-logo_wdir30.webp",
         "credential_url": ""
     },
     {
