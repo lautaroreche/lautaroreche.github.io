@@ -1,6 +1,7 @@
 [
     { "name": "Python", "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1767296271/ffahbnqccm9omg6k6lvi.webp" },
     { "name": "SQL", "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1767296283/aj1xu25igkqt2beeh481.webp" },
+    { "name": "Power BI", "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1778692182/power-bi-logo_stwggb.webp" },
     { "name": "Google Sheets / Microsoft Excel", "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1767296780/aue15c5awz6m5sfrevpa.webp" },
     { "name": "Pandas", "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1767296291/gcpb9kaufkbbyzwkgdpg.webp" },
     { "name": "Django", "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1767296301/d3wiv5vd9ljkb28uytyd.webp" },
