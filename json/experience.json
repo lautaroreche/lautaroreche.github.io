@@ -1,43 +1,85 @@
 [
     {
+        "company": "Oishii Foods Ltd",
+        "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1780825056/logo-oishii_lnsadg.webp",
+        "start_date": "Sep 2025",
+        "end_date": "Present",
+        "location": "Dublin, Ireland",
+        "roles": [
+            {
+                "title": "Assistant Lead",
+                "start_date": "May 2026",
+                "end_date": "Present",
+                "location": "Dublin, Ireland",
+                "description": []
+            },
+            {
+                "title": "General Operative",
+                "start_date": "Sep 2025",
+                "end_date": "May 2026",
+                "location": "Dublin, Ireland",
+                "description": []
+            }
+        ]
+    },
+    {
+        "title": "Professional Development",
+        "company": "Career Break",
+        "icon": "fa-solid fa-graduation-cap",
+        "start_date": "Jan 2025",
+        "end_date": "Aug 2025",
+        "location": "Dublin, Ireland",
+        "description": [
+            "Relocated to Dublin and focused on deepening expertise in data analytics, completing the Google Data Analytics Professional Certificate.",
+            "Achieved C1 Advanced English proficiency and fully integrated into an English-speaking professional environment.",
+            "Delivered freelance projects in data analysis and web development using Python, SQL, Power BI, Tableau, Django, HTML and TailwindCSS.",
+            "Complemented upskilling with operational roles in manufacturing and gastronomy, strengthening adaptability in fast-paced environments."
+        ]
+    },
+    {
         "title": "AI Training Data Analyst",
         "company": "Outlier",
         "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1776413179/outlier_vh6dmj.webp",
-        "start_date": "June 2024",
-        "end_date": "December 2024",
+        "start_date": "Jun 2024",
+        "end_date": "Dec 2024",
         "location": "Buenos Aires, Argentina",
         "description": [
-            "Evaluated and optimized AI model outputs using data-driven validation frameworks (Reinforcement Learning from Human Feedback), ensuring accuracy, consistency, and adherence to defined metrics.",
-            "Analyzed 100+ complex prompts weekly through A/B Testing, identifying patterns, edge cases, and anomalies to improve model performance.",
+            "Evaluated and optimized AI model outputs related to programming in Python and Mathematics using data-driven validation frameworks (Reinforcement Learning from Human Feedback), ensuring accuracy, consistency and adherence to defined metrics.",
+            "Analyzed 100+ complex prompts weekly through A/B Testing, identifying patterns, edge cases and anomalies to improve model performance.",
             "Collaborated with cross-functional teams to refine evaluation criteria and data annotation standards."
         ]
     },
     {
-        "title": "Data & Process Automation Analyst",
         "company": "Mercado Libre",
         "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1776413179/mercadolibre_wccwhe.webp",
-        "start_date": "August 2021",
-        "end_date": "December 2024",
+        "start_date": "Jun 2019",
+        "end_date": "Dec 2024",
         "location": "Buenos Aires, Argentina",
-        "description": [
-            "Designed and implemented Python and SQL scripts to automate 90% of manual validation processes, reducing human error and increasing scalability in the fintech industry.",
-            "Conducted data analysis using Tableau and Google Sheets / Microsoft Excel to identify trends, inefficiencies, and opportunities for process optimization.",
-            "Built and maintained automated reports to monitor KPIs, OKRs, and operational performance.",
-            "Managed 10+ projects in Jira, leading cross-functional follow-ups for bug management in Agile environments (Scrum/Kanban)."
-        ]
-    },
-    {
-        "title": "Customer Experience Representative",
-        "company": "Mercado Libre",
-        "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1776413179/mercadolibre_wccwhe.webp",
-        "start_date": "June 2019",
-        "end_date": "July 2021",
-        "location": "Buenos Aires, Argentina",
-        "description": [
-            "Provided customer service in an environment related to the e-commerce and fintech industries.",
-            "Analyzed customer interaction data using Tableau and Microsoft Excel / Google Sheets to identify pain points, behavioral trends, and service gaps.",
-            "Monitored and improved NPS (+60%) through data-driven recommendations during high-demand periods.",
-            "Supported continuous improvement initiatives and provided actionable insights to product and operations teams."
+        "roles": [
+            {
+                "title": "Data & Process Automation Analyst",
+                "start_date": "Aug 2021",
+                "end_date": "Dec 2024",
+                "location": "Buenos Aires, Argentina",
+                "description": [
+                    "Designed and implemented Python and SQL scripts to automate 90% of manual validation processes, reducing human error and increasing scalability in the fintech industry.",
+                    "Conducted data analysis using Tableau and Google Sheets / Microsoft Excel to identify trends, inefficiencies and opportunities for process optimization.",
+                    "Built and maintained automated reports to monitor KPIs, OKRs and operational performance.",
+                    "Managed 10+ projects in Jira, leading cross-functional follow-ups for bug management in Agile environments (Scrum/Kanban)."
+                ]
+            },
+            {
+                "title": "Customer Experience Representative",
+                "start_date": "Jun 2019",
+                "end_date": "Jul 2021",
+                "location": "Buenos Aires, Argentina",
+                "description": [
+                    "Provided customer service in an environment related to the e-commerce and fintech industries.",
+                    "Analyzed customer interaction data using Tableau and Microsoft Excel / Google Sheets to identify pain points, behavioral trends and service gaps.",
+                    "Monitored and improved NPS (+60%) through data-driven recommendations during high-demand periods.",
+                    "Supported continuous improvement initiatives and provided actionable insights to product and operations teams."
+                ]
+            }
         ]
     }
 ]
