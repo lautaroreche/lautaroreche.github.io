@@ -11,6 +11,7 @@
 	--accent2:       #3d8bff;   /* blue */
 	--bg:            #ffffff;
 	--bg-soft:       #f6f8fb;
+	--bg-softer:     #fbfcfe;
 	--card:          #ffffff;
 	--text:          #1a2230;
 	--text-soft:     #2d3a4d;
@@ -166,6 +167,7 @@ body::before {
 	display: flex;
 	align-items: center;
 	padding: 6rem 2rem 4rem;
+	background: var(--bg-softer);
 	z-index: 1;
 }
 
@@ -208,7 +210,7 @@ body::before {
 
 .home-title {
 	font-family: var(--font-head);
-	font-size: clamp(2.1rem, 5.2vw, 3.6rem);
+	font-size: clamp(2.6rem, 6.4vw, 4.4rem);
 	font-weight: 800;
 	line-height: 1.1;
 	letter-spacing: -0.035em;
@@ -220,7 +222,7 @@ body::before {
 
 .home-subtitle {
 	font-family: var(--font-head);
-	font-size: clamp(1.5rem, 3.6vw, 2.5rem);
+	font-size: clamp(1.85rem, 4.4vw, 3rem);
 	font-weight: 700;
 	line-height: 1.2;
 	letter-spacing: -0.02em;
@@ -291,7 +293,7 @@ body::before {
 	padding: 5rem 2rem;
 	z-index: 1;
 }
-.section-soft { background: var(--bg-soft); }
+.section-soft { background: var(--bg-softer); }
 .section-inner {
 	max-width: 1100px;
 	margin: 0 auto;
@@ -717,7 +719,7 @@ footer {
 	font-size: 0.82rem;
 	letter-spacing: 0.18em;
 	color: var(--muted);
-	background: var(--bg);
+	background: var(--bg-softer);
 }
 
 /* ===========================================================
