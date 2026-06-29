@@ -62,9 +62,23 @@
 		var c = document.getElementById('projects-container');
 		if (!c) return;
 		c.innerHTML = projects.map(function (p) {
-			var publicLink = p.public_url
-				? '<a href="' + esc(p.public_url) + '" target="_blank" rel="noopener" title="Open project"><i class="fas fa-arrow-up-right-from-square"></i></a>'
-				: '';
+			var isPowerBI = p.public_url && /powerbi\.com/i.test(p.public_url);
+			var publicLink = '';
+			if (p.public_url) {
+				if (isPowerBI) {
+					publicLink = '<a class="pbi-link" href="' + esc(p.public_url) + '" target="_blank" rel="noopener" title="Open Power BI dashboard">' +
+						'<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">' +
+							'<defs><linearGradient id="pbi-grad" x1="0" y1="0" x2="0" y2="1">' +
+								'<stop offset="0" stop-color="#FFE17F"/><stop offset="1" stop-color="#F2C811"/>' +
+							'</linearGradient></defs>' +
+							'<rect x="14.5" y="2"  width="6" height="20" rx="1" fill="url(#pbi-grad)"/>' +
+							'<rect x="8"    y="7"  width="6" height="15" rx="1" fill="url(#pbi-grad)" opacity="0.85"/>' +
+							'<rect x="1.5"  y="12" width="6" height="10" rx="1" fill="url(#pbi-grad)" opacity="0.7"/>' +
+						'</svg></a>';
+				} else {
+					publicLink = '<a href="' + esc(p.public_url) + '" target="_blank" rel="noopener" title="Open project"><i class="fas fa-arrow-up-right-from-square"></i></a>';
+				}
+			}
 			var repoLink = p.repo_url
 				? '<a href="' + esc(p.repo_url) + '" target="_blank" rel="noopener" title="Repository"><i class="fa-brands fa-github"></i></a>'
 				: '';
