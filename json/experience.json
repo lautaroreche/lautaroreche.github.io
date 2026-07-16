@@ -11,7 +11,10 @@
                 "start_date": "May 2026",
                 "end_date": "Present",
                 "location": "Dublin, Ireland",
-                "description": []
+                "description": [
+                    "Ensured product quality and traceability across different areas through documentation, continuous improvement and process optimization.",
+                    "Managed stock control in the warehouse, deliveries and staff oversight in a fast-paced environment."
+                ]
             },
             {
                 "title": "General Operative",
@@ -32,7 +35,7 @@
         "description": [
             "Relocated to Dublin and focused on deepening expertise in data analytics, completing the Google Data Analytics Professional Certificate.",
             "Achieved C1 Advanced English proficiency and fully integrated into an English-speaking professional environment.",
-            "Delivered freelance projects in data analysis and web development using Python, SQL, Power BI, Tableau, Django, HTML and TailwindCSS.",
+            "Delivered freelance projects in data analysis and web development using Python, SQL, Power BI, Django, HTML and TailwindCSS.",
             "Complemented upskilling with operational roles in manufacturing and gastronomy, strengthening adaptability in fast-paced environments."
         ]
     },
@@ -63,9 +66,9 @@
                 "location": "Buenos Aires, Argentina",
                 "description": [
                     "Designed and implemented Python and SQL scripts to automate 90% of manual validation processes, reducing human error and increasing scalability in the fintech industry.",
-                    "Conducted data analysis using Tableau and Google Sheets / Microsoft Excel to identify trends, inefficiencies and opportunities for process optimization.",
+                    "Conducted data analysis using Tableau and Microsoft Excel to identify trends, inefficiencies and opportunities for process optimization.",
                     "Built and maintained automated reports to monitor KPIs, OKRs and operational performance.",
-                    "Managed 10+ projects in Jira, leading cross-functional follow-ups for bug management in Agile environments (Scrum/Kanban)."
+                    "Managed 10+ projects in Jira, leading cross-functional follow-ups for bug management in Agile environments (Scrum and Kanban)."
                 ]
             },
             {
@@ -75,7 +78,7 @@
                 "location": "Buenos Aires, Argentina",
                 "description": [
                     "Provided customer service in an environment related to the e-commerce and fintech industries.",
-                    "Analyzed customer interaction data using Tableau and Microsoft Excel / Google Sheets to identify pain points, behavioral trends and service gaps.",
+                    "Analyzed customer interaction data using Tableau and Microsoft Excel to identify pain points, behavioral trends and service gaps.",
                     "Monitored and improved NPS (+60%) through data-driven recommendations during high-demand periods.",
                     "Supported continuous improvement initiatives and provided actionable insights to product and operations teams."
                 ]
