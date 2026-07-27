@@ -1,58 +1,26 @@
 [
     {
-        "title": "Microsoft Certified: Power BI Data Analyst Associate (In progress)",
-        "institution": "Microsoft",
-        "year": "2026",
-        "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1778091156/microsoft-logo_wdir30.webp",
-        "credential_url": ""
+        "degree": "Honours Bachelor Degree in Information Systems",
+        "school": "University of Buenos Aires",
+        "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1785152946/logo-uba_naxxlz.jpg",
+        "icon": "fa-solid fa-graduation-cap",
+        "start_date": "Jan 2017",
+        "end_date": "Dec 2024",
+        "location": "Buenos Aires, Argentina",
+        "description": [
+            "Field of study: Information Systems."
+        ]
     },
     {
-        "title": "English C1 Advanced",
-        "institution": "EF SET",
-        "year": "2026",
-        "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1777661109/efset_logo_dy7g5o.webp",
-        "credential_url": "https://cert.efset.org/en/eW3vQP"
-    },
-    {
-        "title": "AI Fluency: Framework & Foundations",
-        "institution": "Anthropic",
-        "year": "2026",
-        "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1776411259/anthropic_xds4wm.webp",
-        "credential_url": "https://verify.skilljar.com/c/96r9gm53m6d3"
-    },
-    {
-        "title": "Google Data Analytics Professional Certificate",
-        "institution": "Google",
-        "year": "2025",
-        "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1776411259/google_yttlag.webp",
-        "credential_url": "https://www.coursera.org/account/accomplishments/professional-cert/65UYHRL5LSFH"
-    },
-    {
-        "title": "Scientific Computing with Python",
-        "institution": "freeCodeCamp",
-        "year": "2022",
-        "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1776411259/freecodecamp_lbqp94.webp",
-        "credential_url": "https://www.freecodecamp.org/certification/lautaroreche/scientific-computing-with-python-v7"
-    },
-    {
-        "title": "Agile Fundamentals: Scrum and Kanban",
-        "institution": "Udemy",
-        "year": "2022",
-        "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1776411294/udemy_fmuuu9.webp",
-        "credential_url": "https://www.udemy.com/certificate/UC-39d5744f-1353-4e8c-b4ff-c8bb4702f0e6/"
-    },
-    {
-        "title": "Web Development",
-        "institution": "Coderhouse",
-        "year": "2022",
-        "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1776411259/coderhouse_q9uhaq.webp",
-        "credential_url": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1758376360/Web_Development_Certificate_-_Coderhouse_irfrwn.png"
-    },
-    {
-        "title": "Data Analytics",
-        "institution": "Coderhouse",
-        "year": "2021",
-        "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1776411259/coderhouse_q9uhaq.webp",
-        "credential_url": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1758376359/Data_Analytics_Certificate_-_Coderhouse_a1a98i.png"
+        "degree": "Computer Technician",
+        "school": "Instituto Politécnico Modelo",
+        "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1785152946/logo-ipm_zft2bn.jpg",
+        "icon": "fa-solid fa-school",
+        "start_date": "May 2011",
+        "end_date": "Dec 2016",
+        "location": "Buenos Aires, Argentina",
+        "description": [
+            "Field of study: Computer Science & Programming."
+        ]
     }
 ]

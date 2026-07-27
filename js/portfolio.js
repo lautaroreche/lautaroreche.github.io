@@ -183,6 +183,36 @@
 		var c = document.getElementById('education-container');
 		if (!c) return;
 		c.innerHTML = items.map(function (e) {
+			var logo = e.image
+				? '<img src="' + esc(e.image) + '" alt="' + esc(e.school) + '" />'
+				: '<span class="logo-fallback"><i class="' + esc(e.icon || 'fa-solid fa-graduation-cap') + '"></i></span>';
+
+			var bullets = (e.description || []).map(function (d) {
+				return '<li>' + esc(d) + '</li>';
+			}).join('');
+
+			return '' +
+				'<div class="exp-item">' +
+					'<div class="logo-box">' + logo + '</div>' +
+					'<div class="exp-body">' +
+						'<h3>' + esc(e.school) + '</h3>' +
+						'<p class="company">' + esc(e.degree) + '</p>' +
+						'<p class="meta">' + esc(e.start_date) + ' — ' + esc(e.end_date) + ' · ' + esc(e.location) + '</p>' +
+						(bullets ? '<ul>' + bullets + '</ul>' : '') +
+					'</div>' +
+				'</div>';
+		}).join('');
+	}).catch(function (err) {
+		console.error('Education:', err);
+		var c = document.getElementById('education-container');
+		if (c) c.innerHTML = '<p class="muted">Could not load education.</p>';
+	});
+
+	// ---------- Licenses & Certifications ----------
+	loadJSON('json/certifications.json').then(function (items) {
+		var c = document.getElementById('certifications-container');
+		if (!c) return;
+		c.innerHTML = items.map(function (e) {
 			var link = e.credential_url
 				? '<a class="cert-link" href="' + esc(e.credential_url) + '" target="_blank" rel="noopener"><span class="cert-arrow">›</span> View Certificate</a>'
 				: '';
@@ -198,8 +228,8 @@
 				'</div>';
 		}).join('');
 	}).catch(function (err) {
-		console.error('Education:', err);
-		var c = document.getElementById('education-container');
-		if (c) c.innerHTML = '<p class="muted">Could not load education.</p>';
+		console.error('Certifications:', err);
+		var c = document.getElementById('certifications-container');
+		if (c) c.innerHTML = '<p class="muted">Could not load certifications.</p>';
 	});
 })();
