@@ -1,29 +1,24 @@
 [
     {
+        "title": "Assistant Lead",
+        "company": "Oishii Foods Ltd",
+        "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1780825056/logo-oishii_lnsadg.webp",
+        "start_date": "May 2026",
+        "end_date": "Present",
+        "location": "Dublin, Ireland",
+        "description": [
+            "Ensured product quality and traceability across different areas through documentation, continuous improvement and process optimization.",
+            "Managed stock control in the warehouse, deliveries and staff oversight in a fast-paced environment."
+        ]
+    },
+    {
+        "title": "General Operative",
         "company": "Oishii Foods Ltd",
         "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1780825056/logo-oishii_lnsadg.webp",
         "start_date": "Sep 2025",
-        "end_date": "Present",
+        "end_date": "May 2026",
         "location": "Dublin, Ireland",
-        "roles": [
-            {
-                "title": "Assistant Lead",
-                "start_date": "May 2026",
-                "end_date": "Present",
-                "location": "Dublin, Ireland",
-                "description": [
-                    "Ensured product quality and traceability across different areas through documentation, continuous improvement and process optimization.",
-                    "Managed stock control in the warehouse, deliveries and staff oversight in a fast-paced environment."
-                ]
-            },
-            {
-                "title": "General Operative",
-                "start_date": "Sep 2025",
-                "end_date": "May 2026",
-                "location": "Dublin, Ireland",
-                "description": []
-            }
-        ]
+        "description": []
     },
     {
         "title": "Professional Development",
@@ -53,36 +48,31 @@
         ]
     },
     {
+        "title": "Data & Process Automation Analyst",
+        "company": "Mercado Libre",
+        "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1776413179/mercadolibre_wccwhe.webp",
+        "start_date": "Aug 2021",
+        "end_date": "Dec 2024",
+        "location": "Buenos Aires, Argentina",
+        "description": [
+            "Designed and implemented Python and SQL scripts to automate 90% of manual validation processes, reducing human error and increasing scalability in the fintech industry.",
+            "Conducted data analysis using Tableau and Microsoft Excel to identify trends, inefficiencies and opportunities for process optimization.",
+            "Built and maintained automated reports to monitor KPIs, OKRs and operational performance.",
+            "Managed 10+ projects in Jira, leading cross-functional follow-ups for bug management in Agile environments (Scrum and Kanban)."
+        ]
+    },
+    {
+        "title": "Customer Experience Representative",
         "company": "Mercado Libre",
         "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1776413179/mercadolibre_wccwhe.webp",
         "start_date": "Jun 2019",
-        "end_date": "Dec 2024",
+        "end_date": "Jul 2021",
         "location": "Buenos Aires, Argentina",
-        "roles": [
-            {
-                "title": "Data & Process Automation Analyst",
-                "start_date": "Aug 2021",
-                "end_date": "Dec 2024",
-                "location": "Buenos Aires, Argentina",
-                "description": [
-                    "Designed and implemented Python and SQL scripts to automate 90% of manual validation processes, reducing human error and increasing scalability in the fintech industry.",
-                    "Conducted data analysis using Tableau and Microsoft Excel to identify trends, inefficiencies and opportunities for process optimization.",
-                    "Built and maintained automated reports to monitor KPIs, OKRs and operational performance.",
-                    "Managed 10+ projects in Jira, leading cross-functional follow-ups for bug management in Agile environments (Scrum and Kanban)."
-                ]
-            },
-            {
-                "title": "Customer Experience Representative",
-                "start_date": "Jun 2019",
-                "end_date": "Jul 2021",
-                "location": "Buenos Aires, Argentina",
-                "description": [
-                    "Provided customer service in an environment related to the e-commerce and fintech industries.",
-                    "Analyzed customer interaction data using Tableau and Microsoft Excel to identify pain points, behavioral trends and service gaps.",
-                    "Monitored and improved NPS (+60%) through data-driven recommendations during high-demand periods.",
-                    "Supported continuous improvement initiatives and provided actionable insights to product and operations teams."
-                ]
-            }
+        "description": [
+            "Provided customer service in an environment related to the e-commerce and fintech industries.",
+            "Analyzed customer interaction data using Tableau and Microsoft Excel to identify pain points, behavioral trends and service gaps.",
+            "Monitored and improved NPS (+60%) through data-driven recommendations during high-demand periods.",
+            "Supported continuous improvement initiatives and provided actionable insights to product and operations teams."
         ]
     }
 ]

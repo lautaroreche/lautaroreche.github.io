@@ -50,6 +50,39 @@
 			.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 			.replace(/"/g, '&quot;').replace(/'/g, '&#039;');
 	}
+	// "Aug 2021" -> absolute month index. "Present" -> current month.
+	var MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
+	function monthIndex(str) {
+		if (str == null) return null;
+		var s = String(str).trim();
+		if (/^present|current|actualidad$/i.test(s)) {
+			var now = new Date();
+			return now.getFullYear() * 12 + now.getMonth();
+		}
+		var m = s.match(/^([A-Za-z]+)\s+(\d{4})$/);
+		if (!m) return null;
+		var mi = MONTHS.indexOf(m[1].slice(0, 3).toLowerCase());
+		if (mi < 0) return null;
+		return parseInt(m[2], 10) * 12 + mi;
+	}
+	// -> "3 years 4 months" | "1 year" | "8 months" | '' when dates are unparseable
+	function duration(start, end) {
+		var a = monthIndex(start), b = monthIndex(end);
+		if (a == null || b == null) return '';
+		var months = b - a;
+		if (months < 1) months = 1;
+		var years = Math.floor(months / 12), rest = months % 12;
+		var parts = [];
+		if (years) parts.push(years + (years === 1 ? ' year' : ' years'));
+		if (rest) parts.push(rest + (rest === 1 ? ' month' : ' months'));
+		return parts.join(' ');
+	}
+	function metaLine(e) {
+		var d = duration(e.start_date, e.end_date);
+		return esc(e.start_date) + ' — ' + esc(e.end_date) +
+			(d ? ' <span class="duration">' + esc(d) + '</span>' : '') +
+			(e.location ? ' · ' + esc(e.location) : '');
+	}
 	function loadJSON(path) {
 		return fetch(path).then(function (r) {
 			if (!r.ok) throw new Error('Failed: ' + path);
@@ -133,31 +166,6 @@
 				? '<img src="' + esc(e.image) + '" alt="' + esc(e.company) + '" />'
 				: '<span class="logo-fallback"><i class="' + esc(e.icon || 'fa-solid fa-briefcase') + '"></i></span>';
 
-			// Multi-role group (same company, several positions)
-			if (Array.isArray(e.roles) && e.roles.length) {
-				var rolesHtml = e.roles.map(function (r) {
-					var bullets = (r.description || []).map(function (d) {
-						return '<li>' + esc(d) + '</li>';
-					}).join('');
-					return '' +
-						'<div class="role-item">' +
-							'<h4>' + esc(r.title) + '</h4>' +
-							'<p class="meta">' + esc(r.start_date) + ' — ' + esc(r.end_date) + '</p>' +
-							(bullets ? '<ul>' + bullets + '</ul>' : '') +
-						'</div>';
-				}).join('');
-				return '' +
-					'<div class="exp-item exp-group">' +
-						'<div class="logo-box">' + logo + '</div>' +
-						'<div class="exp-body">' +
-							'<h3>' + esc(e.company) + '</h3>' +
-							'<p class="meta">' + esc(e.start_date) + ' — ' + esc(e.end_date) + ' · ' + esc(e.location) + '</p>' +
-							'<div class="roles">' + rolesHtml + '</div>' +
-						'</div>' +
-					'</div>';
-			}
-
-			// Single-role item
 			var bullets = (e.description || []).map(function (d) {
 				return '<li>' + esc(d) + '</li>';
 			}).join('');
@@ -167,7 +175,7 @@
 					'<div class="exp-body">' +
 						'<h3>' + esc(e.title) + '</h3>' +
 						'<p class="company">' + esc(e.company) + '</p>' +
-						'<p class="meta">' + esc(e.start_date) + ' — ' + esc(e.end_date) + ' · ' + esc(e.location) + '</p>' +
+						'<p class="meta">' + metaLine(e) + '</p>' +
 						(bullets ? '<ul>' + bullets + '</ul>' : '') +
 					'</div>' +
 				'</div>';
@@ -195,8 +203,8 @@
 				'<div class="exp-item">' +
 					'<div class="logo-box">' + logo + '</div>' +
 					'<div class="exp-body">' +
-						'<h3>' + esc(e.school) + '</h3>' +
-						'<p class="company">' + esc(e.degree) + '</p>' +
+						'<h3>' + esc(e.degree) + '</h3>' +
+						'<p class="company">' + esc(e.school) + '</p>' +
 						'<p class="meta">' + esc(e.start_date) + ' — ' + esc(e.end_date) + ' · ' + esc(e.location) + '</p>' +
 						(bullets ? '<ul>' + bullets + '</ul>' : '') +
 					'</div>' +

@@ -548,6 +548,20 @@ body::before {
 	color: var(--muted);
 	margin: 0 0 0.6rem 0;
 }
+.exp-item .meta .duration {
+	display: inline-block;
+	margin: 0 0.15rem;
+	padding: 0.05rem 0.45rem;
+	border-radius: 999px;
+	background: rgba(0, 191, 160, 0.10);
+	border: 1px solid rgba(0, 191, 160, 0.22);
+	color: var(--accent);
+	font-size: 0.72rem;
+	font-weight: 600;
+	letter-spacing: 0.03em;
+	white-space: nowrap;
+	vertical-align: 1px;
+}
 .exp-item ul li {
 	position: relative;
 	padding: 0 0 0.35rem 1.25rem;
@@ -562,61 +576,6 @@ body::before {
 	color: var(--accent);
 	font-weight: 900;
 }
-
-/* Multi-role group (LinkedIn-style sub-items) */
-.exp-group .exp-body > .meta {
-	margin: 0 0 1rem 0;
-}
-
-.exp-group .roles {
-	position: relative;
-	padding-left: 1.5rem;
-}
-.exp-group .roles::before {
-	content: '';
-	position: absolute;
-	left: 0.35rem;
-	top: 0.45rem;
-	bottom: 0.45rem;
-	width: 1px;
-	background: var(--border);
-}
-
-.role-item {
-	position: relative;
-	padding: 0 0 1.4rem 0;
-}
-.role-item:last-child { padding-bottom: 0; }
-
-.role-item::before {
-	content: '';
-	position: absolute;
-	left: -1.5rem;
-	top: 0.55rem;
-	width: 0.7rem;
-	height: 0.7rem;
-	margin-left: 0;
-	transform: translateX(0);
-	background: var(--accent);
-	border: 2px solid var(--bg);
-	border-radius: 50%;
-	box-shadow: 0 0 0 1px var(--border);
-}
-
-.role-item h4 {
-	font-family: var(--font-head);
-	font-size: 1rem;
-	font-weight: 700;
-	margin: 0 0 0.1rem 0;
-	line-height: 1.25;
-	color: var(--text);
-}
-
-.role-item .meta {
-	margin: 0 0 0.55rem 0;
-}
-
-.role-item ul { margin: 0; }
 
 /* ===========================================================
    EDUCATION
