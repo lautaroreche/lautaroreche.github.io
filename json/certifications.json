@@ -21,6 +21,13 @@
         "credential_url": "https://www.coursera.org/account/accomplishments/professional-cert/65UYHRL5LSFH"
     },
     {
+        "title": "Data Manipulation in SQL",
+        "institution": "Datacamp",
+        "year": "2025",
+        "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1786366966/logo-datacamp_vd9ayn.jpg",
+        "credential_url": "https://www.datacamp.com/completed/statement-of-accomplishment/course/63f73fd1a34e71b4894f8d6dddd67c50b88c3660"
+    },
+    {
         "title": "Scientific Computing with Python",
         "institution": "freeCodeCamp",
         "year": "2022",
