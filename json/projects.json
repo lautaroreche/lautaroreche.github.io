@@ -38,21 +38,5 @@
         "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1767303033/rbpyusrmvasvcu5equov.webp",
         "public_url": "https://www.fabianlegari.art/",
         "repo_url": "https://github.com/lautaroreche/Legari-Web-Page"
-    },
-    {
-        "title": "Formaggi Web Page",
-        "tags": "HTML, TailwindCSS",
-        "type": "Frontend",
-        "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1767302503/zdjk14wtzsofuqdlozz2.webp",
-        "public_url": "https://formaggi.netlify.app/",
-        "repo_url": "https://github.com/lautaroreche/Formaggi-Web-Page"
-    },
-    {
-        "title": "Feca Web Page",
-        "tags": "HTML, TailwindCSS",
-        "type": "Frontend",
-        "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1767302357/rpuyt2dfxcnwgvkfuulw.webp",
-        "public_url": "https://feca.netlify.app/",
-        "repo_url": "https://github.com/lautaroreche/Feca-Web-Page"
     }
 ]
