@@ -4,7 +4,7 @@
         "school": "University of Buenos Aires",
         "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1785152946/logo-uba_naxxlz.jpg",
         "icon": "fa-solid fa-graduation-cap",
-        "start_date": "Jan 2017",
+        "start_date": "Mar 2017",
         "end_date": "Dec 2024",
         "location": "Buenos Aires, Argentina",
         "description": [
@@ -16,7 +16,7 @@
         "school": "Instituto Politécnico Modelo",
         "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1785152946/logo-ipm_zft2bn.jpg",
         "icon": "fa-solid fa-school",
-        "start_date": "May 2011",
+        "start_date": "Mar 2011",
         "end_date": "Dec 2016",
         "location": "Buenos Aires, Argentina",
         "description": [
