@@ -7,8 +7,8 @@
         "end_date": "Present",
         "location": "Dublin, Ireland",
         "description": [
-            "Promoted to Assistant Lead after 8 months; oversee staff, stock control and deliveries in a fast-paced environment.",
-            "Ensure product quality and traceability across areas through documentation, continuous improvement and process optimisation."
+            "Promoted to Assistant Lead after 8 months; oversee staff, stock control and deliveries.",
+            "Own product quality and traceability documentation across areas, driving process improvements."
         ]
     },
     {
@@ -30,39 +30,37 @@
         "end_date": "Aug 2025",
         "location": "Dublin, Ireland",
         "description": [
-            "Relocated to Dublin and completed the Google Data Analytics Professional Certificate.",
-            "Achieved C1 Advanced English and fully integrated into an English-speaking professional environment.",
-            "Delivered freelance projects in data analysis and web development using Python, SQL and Power BI.",
-            "Complemented upskilling with operational roles in manufacturing and gastronomy, strengthening adaptability and problem-solving in fast-paced environments."
+            "Planned career break following an international relocation to Ireland.",
+            "Focused on settling in a new country, advancing my English to C1 level, and completing the Google Data Analytics Professional Certificate, alongside independent projects using Python, SQL and Power BI."
         ]
     },
     {
-        "title": "AI Training Data Analyst",
+        "title": "AI Trainer",
         "company": "Outlier",
         "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1776413179/outlier_vh6dmj.webp",
         "start_date": "Jun 2024",
         "end_date": "Dec 2024",
         "location": "Buenos Aires, Argentina",
         "description": [
-            "Evaluated and optimised AI model outputs on Python and mathematics tasks using data-driven validation frameworks (RLHF), ensuring accuracy and consistency against defined metrics.",
-            "Reviewed 100+ complex prompts weekly through A/B testing, identifying patterns, edge cases and anomalies to improve model performance.",
-            "Collaborated with cross-functional teams to refine evaluation criteria and data annotation standards."
+            "Evaluated and ranked AI model outputs on Python and mathematics tasks against detailed quality guidelines, checking accuracy, reasoning and consistency.",
+            "Reviewed 100+ complex prompts weekly, comparing model responses and documenting errors, edge cases and failure patterns.",
+            "Wrote detailed written feedback explaining why outputs failed, applying evolving annotation standards across task types."
         ]
     },
     {
-        "title": "Software Engineer",
+        "title": "Incident Management Analyst",
         "company": "Mercado Libre",
         "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1776413179/mercadolibre_wccwhe.webp",
         "start_date": "Aug 2021",
         "end_date": "Dec 2024",
         "location": "Buenos Aires, Argentina",
         "description": [
-            "Incident management and process automation for e-commerce and fintech products across LatAm markets.",
             "Detected and triaged potential production incidents from Customer Experience ticket queues, validating each case against internal tooling and documented procedures before escalation.",
-            "Owned the incident lifecycle in Jira: creation, prioritisation by criticality, cross-functional follow-up with Development, QA and Product, and resolution tracking.",
-            "Built a Python decision-tree engine that automated 90% of manual case validation, reducing time-to-triage and removing a recurring source of human error.",
-            "Produced SLA and KPI reporting on incident resolution times by severity, giving Development, QA, Product, Marketing and Customer Experience a single source of truth.",
-            "Documented recurring incident patterns and remediation procedures for support teams, working in Agile environments (Scrum and Kanban) with 10+ concurrent workstreams in Jira."
+            "Managed the incident lifecycle in Jira: creation, prioritisation by criticality, follow-up with Development, QA and Product, and resolution tracking.",
+            "Built a Python decision-tree engine from scratch, hosted on an internal platform and consuming data from web JSON sources, that automated 90% of manual case validation and reduced time-to-triage.",
+            "Produced SLA and KPI reporting on incident resolution times by severity for Development, QA and Product.",
+            "Documented recurring incident patterns and remediation procedures for support teams.",
+            "Worked in Agile environments (Scrum/Kanban), handling multiple concurrent incidents in Jira."
         ]
     },
     {
@@ -73,10 +71,10 @@
         "end_date": "Jul 2021",
         "location": "Buenos Aires, Argentina",
         "description": [
-            "Handled customer cases across e-commerce and fintech products in a multi-channel support environment.",
-            "Improved NPS by 60% during peak-demand periods through data-driven recommendations.",
-            "Analysed customer interaction data (Tableau, Excel) to surface pain points and service gaps for Product and Operations teams.",
-            "Escalated recurring technical issues to engineering, which is how I moved into the incident management side of the business."
+            "Handled customer cases across e-commerce products in a multi-channel support environment.",
+            "Achieved a 60% improvement in personal NPS during peak-demand periods by adjusting how cases were handled and prioritised.",
+            "Analysed customer interaction data in Excel to identify recurring pain points and service gaps, sharing findings with Product and Operations.",
+            "Escalated recurring technical issues to engineering teams, leading to an internal move into incident management."
         ]
     },
     {

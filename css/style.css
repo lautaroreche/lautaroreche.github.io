@@ -168,11 +168,67 @@ body::before {
 	display: flex;
 	align-items: center;
 	padding: 6rem 2rem 4rem;
-	background: var(--bg-softer);
+	overflow: hidden;
+	isolation: isolate;
+	background:
+		radial-gradient(900px 620px at 84% 14%, rgba(31, 156, 114, 0.14), transparent 62%),
+		radial-gradient(760px 560px at 4% 92%, rgba(180, 83, 9, 0.065), transparent 64%),
+		linear-gradient(180deg, #fbfaf7 0%, var(--bg-softer) 52%, var(--bg-soft) 100%);
 	z-index: 1;
 }
 
+/* Hero layer 1 — evergreen grid, faded out toward the bottom */
+#home::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background-image:
+		linear-gradient(rgba(20, 107, 78, 0.075) 1px, transparent 1px),
+		linear-gradient(90deg, rgba(20, 107, 78, 0.075) 1px, transparent 1px);
+	background-size: 64px 64px;
+	-webkit-mask-image: radial-gradient(130% 105% at 50% 0%, #000 0%, rgba(0,0,0,0.55) 48%, transparent 82%);
+	mask-image: radial-gradient(130% 105% at 50% 0%, #000 0%, rgba(0,0,0,0.55) 48%, transparent 82%);
+	pointer-events: none;
+	z-index: -2;
+}
+
+/* Hero layer 2 — slow-drifting concentric rings (incident "ping") */
+#home::after {
+	content: '';
+	position: absolute;
+	top: -14vw;
+	right: -16vw;
+	width: min(74vw, 780px);
+	aspect-ratio: 1;
+	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cg fill='none' stroke='%23146b4e' stroke-width='1'%3E%3Ccircle cx='300' cy='300' r='70' stroke-opacity='.30'/%3E%3Ccircle cx='300' cy='300' r='130' stroke-opacity='.22'/%3E%3Ccircle cx='300' cy='300' r='195' stroke-opacity='.16'/%3E%3Ccircle cx='300' cy='300' r='262' stroke-opacity='.11' stroke-dasharray='3 9'/%3E%3C/g%3E%3Cg fill='%23146b4e'%3E%3Ccircle cx='370' cy='300' r='4.5' fill-opacity='.55'/%3E%3Ccircle cx='300' cy='170' r='3.5' fill-opacity='.40'/%3E%3Ccircle cx='162' cy='356' r='3' fill-opacity='.33'/%3E%3Ccircle cx='432' cy='420' r='3' fill-opacity='.28'/%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat;
+	opacity: 0.85;
+	pointer-events: none;
+	z-index: -1;
+	animation: heroDrift 90s linear infinite;
+}
+
+@keyframes heroDrift {
+	from { transform: rotate(0deg); }
+	to   { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	#home::after { animation: none; }
+}
+
+@media (max-width: 720px) {
+	#home::after {
+		top: auto;
+		bottom: -30vw;
+		right: -34vw;
+		width: 105vw;
+		opacity: 0.6;
+	}
+}
+
 .home-header {
+	position: relative;
+	z-index: 1;
 	max-width: 1100px;
 	width: 100%;
 	margin: 0 auto;
