@@ -7,8 +7,9 @@
         "end_date": "Present",
         "location": "Dublin, Ireland",
         "description": [
-            "Promoted to Assistant Lead after 8 months; oversee staff, stock control and deliveries.",
-            "Own product quality and traceability documentation across areas, driving process improvements."
+            "Promoted to Assistant Lead after 8 months, overseeing staff, stock control and delivery coordination.",
+            "Created an IT tool using AI to improve daily operations and communication.",
+            "Own quality assurance and traceability documentation across production, identifying recurring issues and driving corrective actions and process improvements."
         ]
     },
     {
@@ -55,12 +56,12 @@
         "end_date": "Dec 2024",
         "location": "Buenos Aires, Argentina",
         "description": [
-            "Detected and triaged potential production incidents from Customer Experience ticket queues, validating each case against internal tooling and documented procedures before escalation.",
-            "Managed the incident lifecycle in Jira: creation, prioritisation by criticality, follow-up with Development, QA and Product, and resolution tracking.",
-            "Built a Python decision-tree engine from scratch, hosted on an internal platform and consuming data from web JSON sources, that automated 90% of manual case validation and reduced time-to-triage.",
-            "Produced SLA and KPI reporting on incident resolution times by severity for Development, QA and Product.",
-            "Documented recurring incident patterns and remediation procedures for support teams.",
-            "Worked in Agile environments (Scrum/Kanban), handling multiple concurrent incidents in Jira."
+            "Managed the full incident lifecycle in Jira across 10+ concurrent cases, tracking priority and SLA compliance by severity.",
+            "Coordinated cross-functional resolution with Development, QA, Product and CX teams in Agile workflows, keeping stakeholders informed from detection to closure.",
+            "Produced SLA and KPI reporting on resolution times by severity, giving teams a shared view of operational performance.",
+            "Documented recurring incident patterns and remediation procedures to build out the team's knowledge base.",
+            "Built a Python decision-tree engine from scratch, hosted on an internal platform and consuming data from web JSON sources, automating 90% of manual case validation.",
+            "Detected and triaged production incidents from Customer Experience ticket queues, validating each case against internal tooling before escalation."
         ]
     },
     {
