@@ -1,5 +1,13 @@
 [
     {
+        "title": "Daily routine assistant",
+        "tags": "AI",
+        "type": "Automation",
+        "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1790885947/Daily_routine_assistant_logo_hqeb7q.png",
+        "public_url": "https://lautaroreche.github.io/lowrisk/",
+        "repo_url": "https://github.com/lautaroreche/lowrisk"
+    },
+    {
         "title": "Ireland Rental Analysis",
         "tags": "Power BI, Power Query, Microsoft Excel",
         "type": "Data Analytics / BI",
