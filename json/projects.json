@@ -8,12 +8,12 @@
         "repo_url": "https://github.com/lautaroreche/daily-routine-assistant/"
     },
     {
-        "title": "Ireland Rental Analysis",
-        "tags": "Power BI, Power Query, Microsoft Excel",
-        "type": "Data Analytics / BI",
-        "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1782748119/logo-ireland-rental-analysis_veljbo.webp",
-        "public_url": "https://app.powerbi.com/view?r=eyJrIjoiNzAwYmUzNjYtMGM2NC00ODI5LWJmYWEtYjQxZGYzZWJkYzgwIiwidCI6IjRjODE4Zjc5LWFiODQtNDU1Mi05YjdjLTJmZTcxNWIwZDBkNSIsImMiOjR9",
-        "repo_url": "https://github.com/lautaroreche/ireland-rental-analysis"
+        "title": "Kanboard Web Page",
+        "tags": "Python, Django, PostgreSQL, HTML, TailwindCSS",
+        "type": "Full Stack",
+        "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1771698869/foto-proyecto-kanboard_vtrsag.webp",
+        "public_url": "https://lautaroreche.github.io/Kanboard-Web-Page/",
+        "repo_url": "https://github.com/lautaroreche/Kanboard-Web-Page"
     },
     {
         "title": "Ragusa Ecommerce",
@@ -24,12 +24,12 @@
         "repo_url": "https://github.com/lautaroreche/E-Commerce-Django"
     },
     {
-        "title": "Kanboard Web Page",
-        "tags": "Python, Django, PostgreSQL, HTML, TailwindCSS",
-        "type": "Full Stack",
-        "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1771698869/foto-proyecto-kanboard_vtrsag.webp",
-        "public_url": "https://lautaroreche.github.io/Kanboard-Web-Page/",
-        "repo_url": "https://github.com/lautaroreche/Kanboard-Web-Page"
+        "title": "Ireland Rental Analysis",
+        "tags": "Power BI, Power Query, Microsoft Excel",
+        "type": "Data Analytics / BI",
+        "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1782748119/logo-ireland-rental-analysis_veljbo.webp",
+        "public_url": "https://app.powerbi.com/view?r=eyJrIjoiNzAwYmUzNjYtMGM2NC00ODI5LWJmYWEtYjQxZGYzZWJkYzgwIiwidCI6IjRjODE4Zjc5LWFiODQtNDU1Mi05YjdjLTJmZTcxNWIwZDBkNSIsImMiOjR9",
+        "repo_url": "https://github.com/lautaroreche/ireland-rental-analysis"
     },
     {
         "title": "Legari Web Page",
