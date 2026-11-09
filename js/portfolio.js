@@ -90,6 +90,20 @@
 		});
 	}
 
+	// Project story: expands inside the card. In json/projects.json each project can have
+	// "summary" (always visible) and "story": [{ heading, text } | { heading, items: [] }].
+	function storyHTML(blocks) {
+		if (!blocks || !blocks.length) return '';
+		return '<details class="project-story"><summary><span class="cert-arrow">›</span> <span class="label-closed">Read the story</span><span class="label-open">Show less</span></summary>' +
+			blocks.map(function (b) {
+				var body = b.items
+					? '<ul>' + b.items.map(function (it) { return '<li>' + esc(it) + '</li>'; }).join('') + '</ul>'
+					: '<p>' + esc(b.text) + '</p>';
+				return '<div class="story-block"><h4>' + esc(b.heading) + '</h4>' + body + '</div>';
+			}).join('') +
+			'</details>';
+	}
+
 	// ---------- Projects ----------
 	loadJSON('json/projects.json').then(function (projects) {
 		var c = document.getElementById('projects-container');
@@ -131,6 +145,8 @@
 						'<h3>' + titleLink + '</h3>' +
 						'<div class="project-type"><span class="cert-arrow">›</span> ' + esc(p.type) + '</div>' +
 						'<div class="tags">' + esc(p.tags) + '</div>' +
+						(p.summary ? '<p class="project-summary">' + esc(p.summary) + '</p>' : '') +
+						storyHTML(p.story) +
 					'</div>' +
 				'</div>';
 		}).join('');
@@ -140,44 +156,79 @@
 		if (c) c.innerHTML = '<p class="muted">Could not load projects.</p>';
 	});
 
-	// ---------- Technologies ----------
-	loadJSON('json/technologies.json').then(function (techs) {
+	// ---------- Skills (grouped) ----------
+	// json/technologies.json: [{ category, items: [{ name, image? }] }]
+	// To add a skill, append { "name": "..." } to a category ("image" is an optional logo URL).
+	loadJSON('json/technologies.json').then(function (groups) {
 		var c = document.getElementById('technologies-container');
 		if (!c) return;
-		c.innerHTML = techs.map(function (t) {
+		c.innerHTML = groups.map(function (g) {
+			var chips = (g.items || []).map(function (t) {
+				var mark = t.image
+					? '<img src="' + esc(t.image) + '" alt="" />'
+					: '<span class="chip-dot"></span>';
+				return '<div class="tech-chip">' + mark + '<span>' + esc(t.name) + '</span></div>';
+			}).join('');
 			return '' +
-				'<div class="tech-chip">' +
-					'<img src="' + esc(t.image) + '" alt="" />' +
-					'<span>' + esc(t.name) + '</span>' +
+				'<div class="skill-row">' +
+					'<h3 class="skill-row-title">' + esc(g.category) + '</h3>' +
+					'<div class="tech-grid">' + chips + '</div>' +
 				'</div>';
 		}).join('');
 	}).catch(function (err) {
-		console.error('Technologies:', err);
+		console.error('Skills:', err);
 		var c = document.getElementById('technologies-container');
-		if (c) c.innerHTML = '<p class="muted">Could not load technologies.</p>';
+		if (c) c.innerHTML = '<p class="muted">Could not load skills.</p>';
 	});
 
 	// ---------- Experience ----------
 	loadJSON('json/experience.json').then(function (items) {
 		var c = document.getElementById('experience-container');
 		if (!c) return;
-		c.innerHTML = items.map(function (e) {
+		// Consecutive entries with the same company are grouped (LinkedIn-style),
+		// so promotions / internal moves show as roles under one company.
+		var groups = [];
+		items.forEach(function (e) {
+			var last = groups[groups.length - 1];
+			if (last && last.company === e.company) last.roles.push(e);
+			else groups.push({ company: e.company, roles: [e] });
+		});
+		function bullets(e) {
+			var li = (e.description || []).map(function (d) { return '<li>' + esc(d) + '</li>'; }).join('');
+			return li ? '<ul>' + li + '</ul>' : '';
+		}
+		c.innerHTML = groups.map(function (g) {
+			var e = g.roles[0];
 			var logo = e.image
 				? '<img src="' + esc(e.image) + '" alt="' + esc(e.company) + '" />'
 				: '<span class="logo-fallback"><i class="' + esc(e.icon || 'fa-solid fa-briefcase') + '"></i></span>';
-
-			var bullets = (e.description || []).map(function (d) {
-				return '<li>' + esc(d) + '</li>';
-			}).join('');
+			var body;
+			if (g.roles.length === 1) {
+				body = '' +
+					'<h3>' + esc(e.title) + '</h3>' +
+					'<p class="company">' + esc(e.company) + '</p>' +
+					'<p class="meta">' + metaLine(e) + '</p>' +
+					bullets(e);
+			} else {
+				var oldest = g.roles[g.roles.length - 1];
+				body = '' +
+					'<h3>' + esc(g.company) + '</h3>' +
+					'<p class="meta">' + metaLine({ start_date: oldest.start_date, end_date: e.end_date, location: e.location }) + '</p>' +
+					'<div class="roles">' + g.roles.map(function (r) {
+						var d = duration(r.start_date, r.end_date);
+						return '' +
+							'<div class="role">' +
+								'<h4>' + esc(r.title) + '</h4>' +
+								'<p class="meta">' + esc(r.start_date) + ' — ' + esc(r.end_date) +
+									(d ? ' <span class="duration">' + esc(d) + '</span>' : '') + '</p>' +
+								bullets(r) +
+							'</div>';
+					}).join('') + '</div>';
+			}
 			return '' +
 				'<div class="exp-item">' +
 					'<div class="logo-box">' + logo + '</div>' +
-					'<div class="exp-body">' +
-						'<h3>' + esc(e.title) + '</h3>' +
-						'<p class="company">' + esc(e.company) + '</p>' +
-						'<p class="meta">' + metaLine(e) + '</p>' +
-						(bullets ? '<ul>' + bullets + '</ul>' : '') +
-					'</div>' +
+					'<div class="exp-body">' + body + '</div>' +
 				'</div>';
 		}).join('');
 	}).catch(function (err) {

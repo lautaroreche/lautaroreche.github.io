@@ -5,7 +5,28 @@
         "type": "Automation",
         "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1790885947/Daily_routine_assistant_logo_hqeb7q.png",
         "public_url": "https://lautaroreche.github.io/daily-routine-assistant/about.html",
-        "repo_url": "https://github.com/lautaroreche/daily-routine-assistant/"
+        "repo_url": "https://github.com/lautaroreche/daily-routine-assistant/",
+        "summary": "The phone app I built and use every shift as Assistant Lead at a food production site.",
+        "story": [
+            {
+                "heading": "Why I built it",
+                "text": "Mornings used to run on paper sheets, mental maths and WhatsApp messages typed from scratch. I built it on my own initiative to save time and reduce errors."
+            },
+            {
+                "heading": "What it does",
+                "items": [
+                    "Daily and weekly task checklist, with tasks that can be delegated.",
+                    "Batch traceability in Julian date format, with checks on impossible dates.",
+                    "Guided shift handover report, ready to paste in the team chat.",
+                    "Daily stock count that flags products near their reorder point.",
+                    "Packing picklists, pallet lists and the weekly roster, available offline."
+                ]
+            },
+            {
+                "heading": "How it's built",
+                "text": "A single HTML file with no backend, encrypted and hosted on GitHub Pages. Data stays on the phone."
+            }
+        ]
     },
     {
         "title": "Kanboard Web Page",
@@ -13,7 +34,27 @@
         "type": "Full Stack",
         "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1771698869/foto-proyecto-kanboard_vtrsag.webp",
         "public_url": "https://lautaroreche.github.io/Kanboard-Web-Page/",
-        "repo_url": "https://github.com/lautaroreche/Kanboard-Web-Page"
+        "repo_url": "https://github.com/lautaroreche/Kanboard-Web-Page",
+        "summary": "The Kanban board I built and use to organise my own day-to-day tasks.",
+        "story": [
+            {
+                "heading": "Why I built it",
+                "text": "I wanted a task board shaped around how I actually work, so every feature exists because I needed it. I use it to organise my own tasks."
+            },
+            {
+                "heading": "What it does",
+                "items": [
+                    "Drag and drop tasks across To do, WIP, On hold and Done; every move is saved in PostgreSQL.",
+                    "Priorities set real deadlines (High 2 days, Medium 7, Low 14) and overdue cards turn red.",
+                    "Columns are sorted by urgency, so high-priority work is always on top.",
+                    "Private boards per user, protected with Django authentication."
+                ]
+            },
+            {
+                "heading": "How it's built",
+                "text": "Server-rendered Django with Tailwind CSS and SortableJS, deployed on Render with a PostgreSQL database on Neon."
+            }
+        ]
     },
     {
         "title": "Ragusa Ecommerce",
@@ -21,7 +62,28 @@
         "type": "Full Stack",
         "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1777960202/Ragusa_E-Commerce_15_e4hcms.webp",
         "public_url": "https://lautaroreche.github.io/E-Commerce-Django/",
-        "repo_url": "https://github.com/lautaroreche/E-Commerce-Django"
+        "repo_url": "https://github.com/lautaroreche/E-Commerce-Django",
+        "summary": "An online shop for Argentine classics (yerba mate, alfajores, dulce de leche) with a real Stripe checkout.",
+        "story": [
+            {
+                "heading": "The idea",
+                "text": "Build the full path of an online shop end to end, from browsing the catalogue to paying, plus the admin side needed to run it."
+            },
+            {
+                "heading": "What it does",
+                "items": [
+                    "Session-based cart without an account, with totals calculated from database prices.",
+                    "Saved products, search across name, description and category, and category browsing.",
+                    "Payments through Stripe Checkout in euros (test mode).",
+                    "Newsletter subscriptions with a welcome email sent through Brevo.",
+                    "Catalogue, prices and product images managed from the Django admin."
+                ]
+            },
+            {
+                "heading": "How it's built",
+                "text": "Server-rendered Django with Tailwind CSS, deployed on Render, PostgreSQL on Neon and product images on Cloudinary."
+            }
+        ]
     },
     {
         "title": "Ireland Rental Analysis",
@@ -29,7 +91,30 @@
         "type": "Data Analytics / BI",
         "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1782748119/logo-ireland-rental-analysis_veljbo.webp",
         "public_url": "https://app.powerbi.com/view?r=eyJrIjoiNzAwYmUzNjYtMGM2NC00ODI5LWJmYWEtYjQxZGYzZWJkYzgwIiwidCI6IjRjODE4Zjc5LWFiODQtNDU1Mi05YjdjLTJmZTcxNWIwZDBkNSIsImMiOjR9",
-        "repo_url": "https://github.com/lautaroreche/ireland-rental-analysis"
+        "repo_url": "https://github.com/lautaroreche/ireland-rental-analysis",
+        "summary": "How Irish rents evolved from 2012 to 2025, by county, property type and number of bedrooms.",
+        "story": [
+            {
+                "heading": "The questions",
+                "text": "I defined two questions before touching the data: which property type increased in price the most, and which counties are the most affordable for family housing (3+ bedrooms) compared with Dublin."
+            },
+            {
+                "heading": "What I did",
+                "items": [
+                    "Took the official RTB Average Monthly Rent Report (RIQ02) published by the CSO, quarterly from 2012 to 2025.",
+                    "Cleaned it in Power Query: kept the 26 counties, removed overlapping aggregate categories to avoid double counting, dropped combinations with no official data and split quarters into year and quarter.",
+                    "Built DAX measures for average rent and growth that recalculate by property type, county or bedroom count depending on the visual."
+                ]
+            },
+            {
+                "heading": "Key findings",
+                "items": [
+                    "Average monthly rent grew 124% nationally, from €612.59 (2012) to €1,370 (2025).",
+                    "Semi-detached houses grew the most (+134%) and apartments the least (+112.87%).",
+                    "Donegal is the most affordable county for family housing, and the absolute monthly gap with Dublin roughly doubled."
+                ]
+            }
+        ]
     },
     {
         "title": "Legari Web Page",
@@ -37,6 +122,17 @@
         "type": "Full Stack",
         "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1767303033/rbpyusrmvasvcu5equov.webp",
         "public_url": "https://www.fabianlegari.art/",
-        "repo_url": "https://github.com/lautaroreche/Legari-Web-Page"
+        "repo_url": "https://github.com/lautaroreche/Legari-Web-Page",
+        "summary": "A website I built for an external client and delivered to production.",
+        "story": [
+            {
+                "heading": "The project",
+                "text": "My delivery for a real client: a full-stack website, live at fabianlegari.art."
+            },
+            {
+                "heading": "How it's built",
+                "text": "Python and Django with a PostgreSQL database, and templates styled with HTML and CSS."
+            }
+        ]
     }
 ]

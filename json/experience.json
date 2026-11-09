@@ -7,9 +7,10 @@
         "end_date": "Present",
         "location": "Dublin, Ireland",
         "description": [
-            "Promoted to Assistant Lead after 8 months, overseeing staff, stock control and delivery coordination.",
-            "Designed and built a web app (Daily Routine Assistant) to digitise daily operations: shift roster, daily to-do checklist, batch traceability logging, shift handover reports and stock counts.",
-            "Own quality assurance and traceability documentation across production, identifying recurring patterns and driving corrective actions and process improvements."
+            "Designed and built a web app (Daily Routine Assistant) to digitise daily operations, including shift rosters, task checklists, batch traceability, shift handovers and stock counts.",
+            "Oversee staff, stock control and delivery coordination to support daily production operations.",
+            "Maintain quality assurance and traceability documentation, identify recurring issues and support corrective actions and process improvements.",
+            "HACCP trained."
         ]
     },
     {
@@ -41,7 +42,7 @@
         "image": "https://res.cloudinary.com/dbmamjgiv/image/upload/v1776413179/outlier_vh6dmj.webp",
         "start_date": "Jun 2024",
         "end_date": "Dec 2024",
-        "location": "Buenos Aires, Argentina",
+        "location": "Remote (Buenos Aires, Argentina)",
         "description": [
             "Evaluated and ranked AI model outputs on Python and mathematics tasks against detailed quality guidelines, checking accuracy, reasoning and consistency.",
             "Reviewed 100+ complex prompts weekly, comparing model responses and documenting errors, edge cases and failure patterns.",
@@ -56,12 +57,11 @@
         "end_date": "Dec 2024",
         "location": "Buenos Aires, Argentina",
         "description": [
-            "Managed the full incident lifecycle in Jira across 10+ concurrent cases, tracking priority and SLA compliance by severity.",
-            "Coordinated cross-functional resolution with Development, QA, Product and CX teams in Agile workflows, keeping stakeholders informed from detection to closure.",
-            "Produced SLA and KPI reporting on resolution times by severity, giving teams a shared view of operational performance.",
-            "Documented recurring incident patterns and remediation procedures to build out the team's knowledge base.",
-            "Built a Python decision-tree engine from scratch, hosted on an internal platform and consuming data from web JSON sources, automating 90% of manual case validation.",
-            "Detected and triaged production incidents from Customer Experience ticket queues, validating each case against internal tooling before escalation."
+            "Validated production incident cases manually against internal tooling, analysing recurring patterns and edge cases across case history to map the decision logic behind the process.",
+            "Designed and built a Python decision-tree engine from scratch to encode that logic — hosted on an internal platform, consuming data from web JSON sources — automating 90% of manual case validation.",
+            "Detected and triaged incidents from CX ticket queues, applying the automated validation before escalation and handling the remaining edge cases manually.",
+            "Managed the full incident lifecycle in Jira across 10+ concurrent cases, using JQL queries and custom filters to track priority and SLA compliance by severity.",
+            "Produced SLA and KPI reporting on resolution times by severity through Jira dashboards and JQL-based filters, giving teams a shared view of operational performance."
         ]
     },
     {
@@ -72,10 +72,10 @@
         "end_date": "Jul 2021",
         "location": "Buenos Aires, Argentina",
         "description": [
-            "Handled customer cases across e-commerce products in a multi-channel support environment.",
-            "Achieved a 60% improvement in personal NPS during peak-demand periods by adjusting how cases were handled and prioritised.",
-            "Analysed customer interaction data in Excel to identify recurring pain points and service gaps, sharing findings with Product and Operations.",
-            "Escalated recurring technical issues to engineering teams, leading to an internal move into incident management."
+            "Delivered multi-channel customer support in a high-volume e-commerce environment, handling complex cases and critical escalations.",
+            "Raised own customer satisfaction (NPS) score by 60% during peak-volume periods through optimised case handling and tailored customer interactions.",
+            "Analysed customer interaction data using Tableau, Excel and Google Sheets to identify recurring pain points and service gaps.",
+            "Escalated recurring technical and operational issues to engineering and specialist teams, sharing data-driven findings to drive process improvements."
         ]
     },
     {
@@ -86,7 +86,7 @@
         "end_date": "May 2019",
         "location": "Buenos Aires, Argentina",
         "description": [
-            "Provided general support for tasks related to administration and finance."
+            "Provided general support for administration and finance tasks."
         ]
     }
 ]
